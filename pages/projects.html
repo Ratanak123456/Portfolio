@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>My Projects | Saren Ratanak - Web Developer Portfolio</title>
+
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container nav-container">
+        <a href="index.html" class="logo">Saren<span>Ratanak</span></a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <h1>My Projects</h1>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>Projects</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Filters -->
+      <section style="padding: 3rem 0; background-color: #f8f9fa">
+        <div class="container">
+          <div
+            class="project-filters"
+            style="
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              gap: 1rem;
+              margin-bottom: 3rem;
+            "
+          >
+            <a
+              href="#all-projects"
+              class="filter-btn"
+              style="
+                padding: 0.7rem 1.8rem;
+                background-color: #3498db;
+                color: white;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+                font-weight: 600;
+                border: 2px solid #3498db;
+                text-decoration: none;
+                display: inline-block;
+                cursor: pointer;
+              "
+              >All Projects</a
+            >
+
+            <a
+              href="#web-projects"
+              class="filter-btn"
+              style="
+                padding: 0.7rem 1.8rem;
+                background-color: white;
+                color: #2c3e50;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+                font-weight: 600;
+                border: 2px solid #ddd;
+                text-decoration: none;
+                display: inline-block;
+                cursor: pointer;
+              "
+              >Web Development</a
+            >
+
+            <a
+              href="#design-projects"
+              class="filter-btn"
+              style="
+                padding: 0.7rem 1.8rem;
+                background-color: white;
+                color: #2c3e50;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+                font-weight: 600;
+                border: 2px solid #ddd;
+                text-decoration: none;
+                display: inline-block;
+                cursor: pointer;
+              "
+              >UI/UX Design</a
+            >
+
+            <a
+              href="#mobile-projects"
+              class="filter-btn"
+              style="
+                padding: 0.7rem 1.8rem;
+                background-color: white;
+                color: #2c3e50;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+                font-weight: 600;
+                border: 2px solid #ddd;
+                text-decoration: none;
+                display: inline-block;
+                cursor: pointer;
+              "
+              >Mobile Apps</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Grid -->
+      <section id="projects-grid">
+        <div class="container">
+          <!-- All Projects Section (visible by default) -->
+          <div id="all-projects">
+            <div class="section-title">
+              <h2>All Projects</h2>
+            </div>
+            <div class="projects-grid">
+              <!-- Project 1 -->
+              <article class="project-card" id="project1">
+                <div
+                  class="project-img"
+                  style="
+                    background: linear-gradient(135deg, #3498db, #8e44ad);
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <img
+                    src="../image/TechGo.png"
+                    alt="TechGo"
+                    style="width: 50%; height: 50%; object-fit: contain"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>TechGo</h3>
+                  <p>
+                    A Static E-commerce Website for Tech Products with Modern
+                    UI/UX Design.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Tailwind CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">HTML</span>
+                  </div>
+                  <div class="project-details mt-1">
+                    <h4>Key Features:</h4>
+                    <ul>
+                      <li>Product catalog with advanced filtering</li>
+                      <li>Shopping cart with real-time updates</li>
+                      <li>Using Tailwind CSS for styling</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 2 -->
+              <article class="project-card" id="project2">
+                <div
+                  class="project-img"
+                  style="
+                    background: linear-gradient(90deg, white 0%, #fff0e1 100%);
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <img
+                    src="../image/KechTeas.png"
+                    alt="KechTeas"
+                    style="width: 50%; height: 50%; object-fit: contain"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>KechTeas</h3>
+                  <p>A Static Travel Website with Engaging UI/UX Design.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">Figma</span>
+                    <span class="project-tag">React Native</span>
+                    <span class="project-tag">Firebase</span>
+                    <span class="project-tag">Google Maps API</span>
+                    <span class="project-tag">Mobile</span>
+                    <span class="project-tag">Design</span>
+                  </div>
+                  <div class="project-details mt-1">
+                    <h4>Key Features:</h4>
+                    <ul>
+                      <li>Trip planning and itinerary creation</li>
+                      <li>Location-based recommendations</li>
+                      <li>Real-time flight and hotel booking</li>
+                      <li>Offline mode for travel data</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 3 -->
+              <article class="project-card" id="project3">
+                <div
+                  class="project-img"
+                  style="
+                    background: linear-gradient(90deg, white 0%, #fff0e1 100%);
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <img
+                    src="../image/BlogSpace.svg"
+                    alt="KechTeas"
+                    style="width: 50%; height: 50%; object-fit: contain"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>BlogSpace</h3>
+                  <p>A Blog website with Modern UI/UX Design.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">HTML/CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">PHP</span>
+                    <span class="project-tag">MySQL</span>
+                    <span class="project-tag">Web</span>
+                  </div>
+                  <div class="project-details mt-1">
+                    <h4>Key Features:</h4>
+                    <ul>
+                      <li>Responsive image gallery with filtering</li>
+                      <li>Blog system for artist updates</li>
+                      <li>Contact form with file upload for commissions</li>
+                      <li>SEO optimized for art-related searches</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Web Development Projects -->
+          <div id="web-projects" style="display: none">
+            <div class="section-title">
+              <h2>Web Development Projects</h2>
+            </div>
+            <div class="projects-grid">
+              <article class="project-card">
+                <div class="project-img" style="background-color: #3498db">
+                  E-Commerce Platform
+                </div>
+                <div class="project-content">
+                  <h3>Modern E-Commerce Store</h3>
+                  <p>
+                    A fully responsive online store built with React and
+                    Node.js.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">MongoDB</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-img" style="background-color: #2ecc71">
+                  Portfolio Website
+                </div>
+                <div class="project-content">
+                  <h3>Artist Portfolio Website</h3>
+                  <p>
+                    Custom portfolio website with gallery and blog features.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">HTML/CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">PHP</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section style="background-color: var(--light-color)">
+        <div class="container text-center">
+          <h2>Have a project in mind?</h2>
+          <p class="mb-2">
+            I'm always interested in hearing about new opportunities and
+            creative projects.
+          </p>
+          <a href="about.html#contact" class="cta-button"
+            >Let's Discuss Your Project</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-about">
+            <div class="footer-logo">Saren<span>Ratanak</span></div>
+            <p>
+              Creating beautiful, functional digital experiences that make a
+              difference.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3>Connect With Me</h3>
+            <div class="social-icons">
+              <a href="https://github.com/Ratanak123456" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ratanak-saren-aa51b0345/"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://t.me/ratanaksaren123" aria-label="Twitter">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2025 Saren Ratanak. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

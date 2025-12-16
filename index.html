@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saren Ratanak - Web Developer & Designer Portfolio</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container nav-container">
+        <a href="index.html" class="logo">Saren<span>Ratanak</span></a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/projects.html">Projects</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>Creating Digital Experiences That Inspire</h1>
+          <p>
+            I'm a passionate web developer and UI/UX designer by creating
+            modern, responsive websites and applications that deliver
+            exceptional user experiences.
+          </p>
+          <a href="./pages/projects.html" class="cta-button">View My Work</a>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section
+        id="skills"
+        style="
+          padding: 80px 0;
+          background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        "
+      >
+        <div class="container">
+          <div
+            class="section-title"
+            style="text-align: center; margin-bottom: 60px"
+          >
+            <h2
+              style="
+                font-size: 2.8rem;
+                color: #2c3e50;
+                position: relative;
+                display: inline-block;
+                padding-bottom: 15px;
+                margin-bottom: 0;
+              "
+            >
+              My Skills
+              <span
+                style="
+                  position: absolute;
+                  bottom: 0;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 100px;
+                  height: 4px;
+                  background: linear-gradient(90deg, #3498db, #9b59b6);
+                  border-radius: 2px;
+                "
+              ></span>
+            </h2>
+            <p
+              style="
+                font-size: 1.2rem;
+                color: #7f8c8d;
+                max-width: 600px;
+                margin: 20px auto 0;
+                line-height: 1.6;
+              "
+            >
+              Technologies and tools I work with to create exceptional digital
+              experiences
+            </p>
+          </div>
+
+          <div
+            class="skills-container"
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+              gap: 30px;
+            "
+          >
+            <article
+              class="skill-card"
+              style="
+                background: white;
+                padding: 40px 30px;
+                border-radius: 16px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                transition: all 0.4s ease;
+                border: 1px solid #e9ecef;
+                position: relative;
+                overflow: hidden;
+              "
+            >
+              <div
+                style="
+                  width: 70px;
+                  height: 70px;
+                  background: linear-gradient(135deg, #3498db, #2980b9);
+                  border-radius: 16px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 25px;
+                "
+              >
+                <i
+                  class="fa-solid fa-code"
+                  style="font-size: 2.2rem; color: white"
+                ></i>
+              </div>
+              <h3
+                style="
+                  font-size: 1.5rem;
+                  color: #2c3e50;
+                  margin-bottom: 15px;
+                  font-weight: 700;
+                "
+              >
+                Frontend Development
+              </h3>
+              <p style="color: #5d6d7e; line-height: 1.7; margin-bottom: 20px">
+                Building responsive, accessible websites using HTML5, CSS3,
+                JavaScript, and modern frameworks like React and Nextjs.
+              </p>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                  margin-top: 20px;
+                "
+              >
+                <span
+                  style="
+                    background: #e8f4fc;
+                    color: #2980b9;
+                    padding: 6px 14px;
+                    border-radius: 20px;
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                  "
+                  >React</span
+                >
+                <span
+                  style="
+                    background: #e8f4fc;
+                    color: #2980b9;
+                    padding: 6px 14px;
+                    border-radius: 20px;
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                  "
+                  >Next.js</span
+                >
+                <span
+                  style="
+                    background: #e8f4fc;
+                    color: #2980b9;
+                    padding: 6px 14px;
+                    border-radius: 20px;
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                  "
+                  >TypeScript</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="skill-card"
+              style="
+                background: white;
+                padding: 40px 30px;
+                border-radius: 16px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                transition: all 0.4s ease;
+                border: 1px solid #e9ecef;
+                position: relative;
+                overflow: hidden;
+              "
+            >
+              <div
+                style="
+                  width: 70px;
+                  height: 70px;
+                  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+                  border-radius: 16px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 25px;
+                "
+              >
+                <i
+                  class="fa-solid fa-pencil"
+                  style="font-size: 2.2rem; color: white"
+                ></i>
+              </div>
+              <h3
+                style="
+                  font-size: 1.5rem;
+                  color: #2c3e50;
+                  margin-bottom: 15px;
+                  font-weight: 700;
+                "
+              >
+                UI/UX Design
+              </h3>
+              <p style="color: #5d6d7e; line-height: 1.7; margin-bottom: 20px">
+                Creating intuitive user interfaces and experiences with a focus
+                on usability, accessibility, and aesthetic appeal.
+              </p>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                  margin-top: 20px;
+                "
+              >
+                <span
+                  style="
+                    background: #f4ecf7;
+                    color: #8e44ad;
+                    padding: 6px 14px;
+                    border-radius: 20px;
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                  "
+                  >Figma</span
+                >
+                <span
+                  style="
+                    background: #f4ecf7;
+                    color: #8e44ad;
+                    padding: 6px 14px;
+                    border-radius: 20px;
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                  "
+                  >Adobe XD</span
+                >
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section -->
+      <section id="featured-projects">
+        <div class="container">
+          <div class="section-title">
+            <h2>Featured Projects</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div
+                class="project-img"
+                style="
+                  background: linear-gradient(135deg, #3498db, #8e44ad);
+                  position: relative;
+                  overflow: hidden;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <img
+                  src="./image/TechGo.png"
+                  alt="TechGo"
+                  style="width: 50%; height: 50%; object-fit: contain"
+                />
+              </div>
+              <div class="project-content">
+                <h3>TechGo</h3>
+                <p>
+                  A Static E-commerce Website for Tech Products with Modern
+                  UI/UX Design.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Tailwind CSS</span>
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">JavaScript</span>
+                </div>
+                <a
+                  href="https://e-commerce-xi-six-51.vercel.app/index.html"
+                  class="cta-button"
+                  >View Details</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div
+                class="project-img"
+                style="
+                  background: linear-gradient(90deg, white 0%, #fff0e1 100%);
+                  position: relative;
+                  overflow: hidden;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <img
+                  src="./image/KechTeas.png"
+                  alt="KechTeas"
+                  style="width: 50%; height: 50%; object-fit: contain"
+                />
+              </div>
+              <div class="project-content">
+                <h3>KechTeas</h3>
+                <p>A Static Travel Website with Engaging UI/UX Design.</p>
+                <div class="project-tags">
+                  <span class="project-tag"> React JS </span>
+                  <span class="project-tag"> Tailwind CSS </span>
+                  <span class="project-tag"> HTML </span>
+                </div>
+                <a
+                  href="https://afternoon-project.vercel.app/"
+                  class="cta-button"
+                  >View Details</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div
+                class="project-img"
+                style="
+                  background: linear-gradient(90deg, white 0%, #fff0e1 100%);
+                  position: relative;
+                  overflow: hidden;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <img
+                  src="./image/BlogSpace.svg"
+                  alt="KechTeas"
+                  style="width: 50%; height: 50%; object-fit: contain"
+                />
+              </div>
+              <div class="project-content">
+                <h3>BlogSpace</h3>
+                <p>A Blog website with Modern UI/UX Design.</p>
+                <div class="project-tags">
+                  <span class="project-tag">HTML/CSS</span>
+                  <span class="project-tag">Tailwind CSS</span>
+                  <span class="project-tag">Nextjs</span>
+                </div>
+                <a
+                  href="https://blog-space-inky-sigma.vercel.app/"
+                  class="cta-button"
+                  >View Details</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="text-center mt-2">
+            <a href="./pages/projects.html" class="cta-button">View All Projects</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-about">
+            <div class="footer-logo">Saren<span>Ratanak</span></div>
+            <p>
+              Creating beautiful, functional digital experiences that make a
+              difference.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./pages/projects.html">Projects</a></li>
+              <li><a href="./pages/about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3>Connect With Me</h3>
+            <div class="social-icons">
+              <a href="https://github.com/Ratanak123456" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ratanak-saren-aa51b0345/"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://t.me/ratanaksaren123" aria-label="Twitter">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2025 Saren Ratanak. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
