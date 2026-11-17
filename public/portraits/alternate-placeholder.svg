@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" fill="none">
+  <style>:root{--paper:#fff}@media(prefers-color-scheme:dark){:root{--paper:#000}}</style>
+  <path d="M0 0H1200V1500H0Z" fill="var(--paper)"/>
+  <g stroke="#F6B94F" stroke-opacity=".25" stroke-linecap="round">
+    <path d="m282 1030 246-291m-211 323 248-294m-206 321 250-295m-209 322 239-282m-196 306 222-262m-175 285 216-254m-174 281 201-237m-155 244 190-224m-145 232 174-205"/>
+    <path d="m396 352-23 153m58-134-23 153m58-134-23 153" stroke-width="4" stroke-opacity=".4"/>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+{
+  "devicon_revision": "32fe1d3b3f36ad11f90ab94f7db59738139c2bf6",
+  "simple_icons_revision": "c37b20d397a710fdd402aae3cb643b820b142074",
+  "nexus_revision": "0a8a425daa4b37e924ca11e4637a41afce7b115c",
+  "assets": {
+    "linux.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/linux/linux-original.svg",
+    "bash.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/bash/bash-original.svg",
+    "amazonwebservices.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/amazonwebservices/amazonwebservices-original.svg",
+    "ansible.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/ansible/ansible-original.svg",
+    "vagrant.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/vagrant/vagrant-original.svg",
+    "nginx.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/c37b20d397a710fdd402aae3cb643b820b142074/icons/nginx.svg",
+    "haproxy.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/haproxy/haproxy-original.svg",
+    "git.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/git/git-original.svg",
+    "sonarqube.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/sonarqube/sonarqube-original.svg",
+    "java.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/java/java-original.svg",
+    "spring.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/spring/spring-original.svg",
+    "jwt.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/jwt/jwt-original.svg",
+    "gradle.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/gradle/gradle-original.svg",
+    "typescript.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/typescript/typescript-original.svg",
+    "react.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/react/react-original.svg",
+    "nextjs.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/nextjs/nextjs-original.svg",
+    "vite.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/vite/vite-original.svg",
+    "tailwindcss.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/tailwindcss/tailwindcss-original.svg",
+    "html5.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/html5/html5-original.svg",
+    "css3.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/css3/css3-original.svg",
+    "postgresql.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/postgresql/postgresql-original.svg",
+    "arduino.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/arduino/arduino-original.svg",
+    "python.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/python/python-original.svg",
+    "virtualbox.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/c37b20d397a710fdd402aae3cb643b820b142074/icons/virtualbox.svg",
+    "springboot.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/c37b20d397a710fdd402aae3cb643b820b142074/icons/springboot.svg",
+    "springsecurity.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/c37b20d397a710fdd402aae3cb643b820b142074/icons/springsecurity.svg",
+    "espressif.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/c37b20d397a710fdd402aae3cb643b820b142074/icons/espressif.svg",
+    "mqtt.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/c37b20d397a710fdd402aae3cb643b820b142074/icons/mqtt.svg",
+    "systemd.svg": "https://brand.systemd.io/assets/svg/systemd-logomark.svg",
+    "keepalived.png": "https://www.keepalived.org/images/favicon.png",
+    "nexus.svg": "https://raw.githubusercontent.com/sonatype/nexus-public/0a8a425daa4b37e924ca11e4637a41afce7b115c/public/common/components/nexus-rapture/src/main/resources/static/rapture/resources/icons/x100/sonatype-repository-icon.svg",
+    "DEVICON-LICENSE": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/LICENSE",
+    "SIMPLE-ICONS-LICENSE": "https://raw.githubusercontent.com/simple-icons/simple-icons/c37b20d397a710fdd402aae3cb643b820b142074/LICENSE.md",
+    "jenkins.svg": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/jenkins/jenkins-original.svg"
+  },
+  "reused_assets": {
+    "github.svg": "src/components/rack/tool-logos.ts (Simple Icons path)",
+    "docker.svg": "src/components/rack/tool-logos.ts (Simple Icons path)",
+    "kubernetes.svg": "src/components/rack/tool-logos.ts (Simple Icons path)"
+  },
+  "project_assets": {
+    "database.svg": "Generic database cylinder, created for this catalog."
+  },
+  "modifications": {
+    "simple-icons": "Brand fill colors added to the SVG root.",
+    "systemd.svg": "ViewBox cropped to remove empty margins; original artwork retained."
+  }
+}

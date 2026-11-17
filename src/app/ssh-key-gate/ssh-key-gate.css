@@ -1,0 +1,134 @@
+.ssh-home { width: 100%; min-width: 0; }
+.ssh-overlay {
+  --opening-width: min(62vw, 640px, 70vh); --door-top: 19%; --door-height: 58%;
+  --door-bottom: calc(var(--door-top) + var(--door-height));
+  --opening-side: calc((100% - var(--opening-width)) / 2);
+  position: fixed; inset: 0; z-index: 100; overflow: hidden;
+  color: #000; isolation: isolate;
+}
+.ssh-drawing { display: block; width: 100%; height: 100%; }
+.ssh-drawing :is(path, circle, ellipse) { vector-effect: non-scaling-stroke; }
+.ssh-doorway, .ssh-frame-portal {
+  position: absolute; top: var(--door-top); left: var(--opening-side);
+  width: var(--opening-width); height: var(--door-height);
+}
+.ssh-doorway { z-index: 2; }
+.ssh-door-clip { position: absolute; inset: 0; overflow: hidden; }
+.ssh-panel { position: absolute; top: 0; bottom: 0; width: 50%; background: #fff; will-change: transform; }
+.ssh-panel-left { left: 0; z-index: 2; }
+.ssh-panel-right { right: 0; z-index: 1; }
+.ssh-leaf-drawing { position: absolute; inset: 0; }
+.ssh-frame { position: absolute; z-index: 7; inset: 0; pointer-events: none; }
+.ssh-frame-portal { overflow: visible; }
+.ssh-frame-drawing { overflow: visible; }
+.ssh-wall-top { position: absolute; top: 0; left: 0; right: 0; height: var(--door-top); background: #fff; }
+.ssh-wall-left, .ssh-wall-right { position: absolute; top: var(--door-top); width: var(--opening-side); height: var(--door-height); background: #fff; }
+.ssh-wall-left { left: 0; }
+.ssh-wall-right { right: 0; }
+.ssh-wall-marks {
+  position: absolute; inset: 0;
+  clip-path: polygon(0 0, 100% 0, 100% var(--door-bottom), calc(100% - var(--opening-side)) var(--door-bottom), calc(100% - var(--opening-side)) var(--door-top), var(--opening-side) var(--door-top), var(--opening-side) var(--door-bottom), 0 var(--door-bottom));
+}
+.ssh-floor { position: absolute; z-index: 3; top: var(--door-bottom); left: 0; right: 0; bottom: 0; background: #fff; pointer-events: none; }
+.ssh-key-shadow { position: absolute; top: 58px; left: calc(50% - 46px); width: 110px; height: 24px; opacity: .23; filter: blur(1.5px); }
+.ssh-lock { position: absolute; z-index: 1; }
+.ssh-lock-left { top: calc(62% - 43px); right: -16px; width: 52px; height: 86px; }
+.ssh-lock-right { top: calc(62% - 21px); left: 18px; width: 30px; height: 42px; }
+.ssh-latch {
+  position: absolute; top: 34px; right: -8px; width: 46px; height: 18px;
+  background: #000; border: 1px solid rgb(255 255 255 / 50%);
+  box-shadow: 0 1px 0 #000;
+}
+.ssh-latch::after { content: ""; position: absolute; right: 3px; top: 3px; bottom: 3px; width: 3px; border-left: 1px solid rgb(255 255 255 / 30%); }
+.ssh-keyhole {
+  position: absolute; z-index: 1; right: 5px; top: 32px; width: 22px; height: 22px;
+  border: 1px solid rgb(255 255 255 / 65%); border-radius: 50%; background: #000;
+  box-shadow: 0 0 0 2px #000;
+}
+.ssh-keyhole svg { display: block; width: 100%; height: 100%; }
+.ssh-overlay:is([data-state="held"], [data-state="inserting"]) .ssh-keyhole { border-color: #F6B94F; box-shadow: 0 0 0 2px #000, 0 0 0 3px #F6B94F; }
+.ssh-unlock {
+  position: absolute; z-index: 8; left: calc(50% - 65px);
+  top: calc(var(--door-top) + var(--door-height) * .62 - 52px);
+  width: 130px; height: 104px; padding: 0; border: 0; border-radius: 6px;
+  background: transparent; cursor: pointer; touch-action: manipulation; outline-offset: 4px;
+}
+.ssh-unlock[aria-disabled="true"] { pointer-events: none; }
+.ssh-unlock:focus { outline: none; }
+.ssh-unlock:focus-visible { outline: 1px dashed #000; }
+.ssh-title {
+  position: absolute; z-index: 8; top: calc(var(--door-top) - 83px); left: 0; right: 0;
+  margin: 0; text-align: center; font-size: 11px; line-height: 1.5;
+  letter-spacing: .28em; font-weight: 400; color: rgb(0 0 0 / 65%); pointer-events: none;
+}
+.ssh-key-clip { position: absolute; z-index: 8; inset: 0; pointer-events: none; }
+.ssh-overlay:is([data-state="opening"], [data-state="push-in"], [data-state="pullback"]) .ssh-key-clip {
+  z-index: 6;
+  clip-path: inset(var(--door-top) var(--opening-side) calc(100% - var(--door-bottom)));
+}
+.ssh-key-carrier { position: absolute; inset: 0; pointer-events: none; }
+.ssh-key {
+  position: absolute; left: calc(50% - 36px); top: calc(var(--door-bottom) + 12px);
+  width: 104px; height: 104px; padding: 0; border: 0; border-radius: 12px;
+  background: transparent; cursor: grab; pointer-events: auto;
+  touch-action: none; user-select: none; -webkit-tap-highlight-color: transparent;
+  transform-origin: 50% 12px; outline-offset: 2px; will-change: transform;
+}
+.ssh-key-object { position: absolute; inset: 0; display: block; transform: rotateX(64deg) rotate(-62deg); transform-origin: 50% 50%; }
+.ssh-key svg { display: block; }
+.ssh-key-tip { position: absolute; left: 51px; top: 11px; width: 2px; height: 2px; pointer-events: none; }
+.ssh-key[data-dragging] { cursor: grabbing; }
+.ssh-key:focus { outline: none; }
+.ssh-key:focus-visible { outline: 1px dashed rgb(0 0 0 / 50%); }
+.ssh-key[aria-disabled="true"] { cursor: default; pointer-events: none; }
+.ssh-instruction {
+  position: absolute; z-index: 8; top: calc(var(--door-bottom) + 128px); left: 12px; right: 12px;
+  margin: 0; text-align: center; font-size: 13px; line-height: 1.5;
+  letter-spacing: .015em; color: rgb(0 0 0 / 75%); pointer-events: none;
+}
+.ssh-overlay:is([data-state="disengaging"], [data-state="opening"], [data-state="push-in"], [data-state="pullback"]) :is(.ssh-title, .ssh-instruction, .ssh-unlock) { visibility: hidden; }
+.ssh-skip {
+  position: absolute; top: max(22px, env(safe-area-inset-top)); right: max(24px, env(safe-area-inset-right)); z-index: 10;
+  min-height: 44px; padding: 10px 12px; border: 0; background: #fff;
+  color: #000; font-family: inherit; font-size: 11px; line-height: 1.4; cursor: pointer; outline-offset: 4px;
+}
+.ssh-skip span { margin-left: 8px; }
+.ssh-skip:hover { text-decoration: underline; text-underline-offset: 4px; }
+.ssh-skip:focus-visible { outline: 1px dashed #000; }
+@media (max-width: 767px) {
+  .ssh-overlay { --opening-width: 82vw; --door-top: 18%; --door-height: 59%; }
+  .ssh-title { top: calc(var(--door-top) - 76px); font-size: 10px; }
+  .ssh-skip { top: max(12px, env(safe-area-inset-top)); right: max(12px, env(safe-area-inset-right)); }
+  .ssh-instruction { font-size: 12px; }
+}
+@media (max-height: 650px) {
+  .ssh-overlay { --door-top: 21%; --door-height: 51%; }
+  .ssh-key { top: calc(var(--door-bottom) - 4px); }
+  .ssh-key-shadow { top: 42px; }
+  .ssh-instruction { top: calc(var(--door-bottom) + 103px); font-size: 12px; }
+  .ssh-title { top: calc(var(--door-top) - 65px); }
+}
+@media (max-height: 450px) {
+  .ssh-overlay { --door-top: 23%; --door-height: 46%; }
+  .ssh-key { top: calc(var(--door-bottom) - 16px); }
+  .ssh-key-shadow { top: 30px; }
+  .ssh-instruction { top: auto; bottom: 7px; }
+  .ssh-title { top: calc(var(--door-top) - 53px); }
+}
+@media (prefers-reduced-motion: reduce) { .ssh-panel, .ssh-key { will-change: auto; } }
+
+.ssh-home [data-ssh-focus]:focus { outline: none; }
+
+/* Real render dimensions, never a CSS-scaled canvas. The original grid cell
+   stays in place while this same live renderer moves back into its bounds. */
+.ssh-home[data-rack-intro] { overflow: clip; }
+.ssh-home[data-rack-intro] .rack-render-area {
+  position: fixed; right: auto; bottom: auto; z-index: 30;
+  background: var(--hero-background);
+}
+.ssh-home[data-rack-intro] > header,
+.ssh-home[data-rack-intro] .hero-intro,
+.ssh-home[data-rack-intro] main > :not(:first-child),
+.ssh-home[data-rack-intro] .rack-render-area > :not(:has(canvas)) { opacity: var(--rack-intro-ui, 0); }
+.ssh-home[data-rack-intro] .rack-part-control,
+.ssh-home[data-rack-intro] .rack-render-area button { visibility: hidden; }

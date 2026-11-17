@@ -1,0 +1,12 @@
+.projects-transition { --hero-background: #FFFFFF; --hero-ink: #000000; position: relative; isolation: isolate; background: #FFFFFF; }
+.projects-transition > .about-section { isolation: auto; overflow: visible; padding-bottom: 0; background: transparent; }
+.projects-transition > [data-contour-load] > .about-topography { z-index: 0; mix-blend-mode: difference; }
+.projects-transition .about-grid { position: relative; z-index: 1; }
+.projects-title-scene { position: relative; z-index: 1; height: 100svh; width: 100%; overflow: hidden; background: transparent; pointer-events: none; }
+/* The viewport stays fixed. Only its vector camera and outline tilt animate. */
+.projects-zoom-word { display: block; position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; color: #000000; }
+.projects-transition > #projects { position: relative; overflow: clip; }
+.projects-transition > #projects::before { content: ''; position: absolute; inset: 0; z-index: -1; background: #000000; }
+.projects-transition[data-projects-pinned] > #projects { margin-top: calc(-1 * var(--projects-scene-height, 100svh)); }
+.projects-showcase-inner { position: relative; z-index: 2; padding-top: clamp(96px, 11vh, 140px); transform-origin: 50% 180px; }
+@media (prefers-reduced-motion: reduce) { .projects-title-scene { display: none; } .projects-showcase-inner { transform: none; } }

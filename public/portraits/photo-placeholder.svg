@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" fill="none">
+  <style>:root{--ink:#000}@media(prefers-color-scheme:dark){:root{--ink:#fff}}</style>
+  <g stroke="var(--ink)" stroke-opacity=".08" stroke-linecap="round">
+    <path d="m243 1023 142-166m-119 198 149-173m-108 196 125-145m-83 163 133-155m-87 179 131-153m-79 171 119-139m-69 163 128-149m-77 176 123-143m-63 146 131-152m-78 155 112-131m-59 141 99-115m-47 133 72-84m-13 61 62-73"/>
+    <path d="m313 718 67-77m331-87 43-51m-16 109 55-65m-435 213 45-54m254-18 74-86m35 161 61-72m-77 160 103-119m-483 276 82-96m47 117 116-137m-26 131 106-124m93 74 63-72" stroke-opacity=".05"/>
+  </g>
+</svg>

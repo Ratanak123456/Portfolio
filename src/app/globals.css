@@ -1,21 +1,40 @@
 @import "tailwindcss";
 
+@theme {
+  --color-workspace-graphite: #14171a;
+  --color-workspace-slate: #1f2429;
+  --color-workspace-white: #f4f1ea;
+  --color-workspace-gray: #a7b0ba;
+  --color-workspace-amber: #f6b94f;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --hero-background: var(--background);
+  --hero-ink: var(--foreground);
+  --hero-ship: #000000;
+  --hero-ship-underline: #f6b94f;
+  --foreground: #000000;
 }
 
 @theme inline {
+  --color-hero-background: var(--hero-background);
+  --color-hero-ink: var(--hero-ink);
+  --color-hero-amber: #f6b94f;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-bricolage-grotesque);
+  --font-technical: var(--font-ibm-plex-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #ffffff;
+    --hero-ship: #f6b94f;
+    --hero-ship-underline: transparent;
   }
 }
 
@@ -23,4 +42,67 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-ship {
+  color: var(--hero-ship);
+  text-decoration: underline;
+  text-decoration-color: var(--hero-ship-underline);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.hero-project-link {
+  transition: transform 100ms ease-out;
+}
+
+.hero-project-link:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.rack-click-ring {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--color-hero-amber);
+  border-radius: 50%;
+  animation: rack-click-feedback 340ms ease-out both;
+}
+
+@keyframes rack-click-feedback {
+  from { opacity: 0.9; transform: translate(-50%, -50%) scale(0.4); }
+  to { opacity: 0; transform: translate(-50%, -50%) scale(1.5); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-project-link,
+  .hero-project-link:active {
+    transition: none;
+    transform: none;
+  }
+
+  .rack-click-ring {
+    display: none;
+    animation: none;
+  }
+}
+
+/* Borrow only the hero's right margin; the intro keeps its original grid cell. */
+@media (min-width: 1024px) {
+  .hero-viewer {
+    margin-left: -16px;
+    width: calc(100% + 16px + clamp(0px, calc((100vw - 1280px) / 2 - 24px), 160px));
+  }
+}
+
+/* Long drive actions wrap beside their anchor on the narrowest phones. */
+@media (max-width: 360px) {
+  .rack-part-control {
+    max-width: 5.5rem;
+  }
 }
